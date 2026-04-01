@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perjalanan | Raihan Agil Maulana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0F172A',
+                        accent: '#F59E0B',
+                        secondary: '#10B981',
+                        cream: '#FAFAF9',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cream text-primary dark:bg-primary dark:text-cream transition-colors duration-300">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300" id="navbar">
+        <div class="glass-effect mx-4 mt-4 rounded-full px-6 py-3 max-w-6xl mx-auto">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="font-display font-bold text-xl tracking-tighter">
+                    <span class="text-accent">//</span> RAIHAN_AGIL
+                </a>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="about.html" class="hover:text-accent transition-colors text-sm font-medium">Tentang</a>
+                    <a href="journey.html" class="text-accent transition-colors text-sm font-medium">Perjalanan</a>
+                    <a href="projects.html" class="hover:text-accent transition-colors text-sm font-medium">Proyek</a>
+                    <a href="skills.html" class="hover:text-accent transition-colors text-sm font-medium">Skill</a>
+                    <a href="contact.html" class="hover:text-accent transition-colors text-sm font-medium">Kontak</a>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <button onclick="toggleDarkMode()" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                        <svg id="sun-icon" class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                        <svg id="moon-icon" class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                    </button>
+                    
+                    <button class="md:hidden" onclick="toggleMobileMenu()">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden glass-effect mx-4 mt-2 rounded-2xl p-4">
+            <div class="flex flex-col space-y-3">
+                <a href="about.html" class="hover:text-accent transition-colors">Tentang</a>
+                <a href="journey.html" class="text-accent transition-colors">Perjalanan</a>
+                <a href="projects.html" class="hover:text-accent transition-colors">Proyek</a>
+                <a href="skills.html" class="hover:text-accent transition-colors">Skill</a>
+                <a href="contact.html" class="hover:text-accent transition-colors">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Journey Section -->
+    <section class="py-32 bg-gray-50 dark:bg-gray-900/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="font-display text-4xl font-bold mb-4">Perjalanan <span class="gradient-text">Academik</span></h2>
+                <p class="text-gray-600 dark:text-gray-400">Pendidikan, pengalaman, dan organisasi</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto relative">
+                <div class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-accent to-secondary"></div>
+
+                <!-- Timeline Item 1 -->
+                <div class="relative flex flex-col md:flex-row items-center mb-12 reveal">
+                    <div class="flex-1 md:text-right md:pr-8 mb-4 md:mb-0">
+                        <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700 inline-block">
+                            <span class="text-accent font-bold text-sm">2023 - Sekarang</span>
+                            <h3 class="font-display text-xl font-bold mt-2">Universitas Kristen Satya Wacana</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mt-2">S1 Sistem Informasi | NIM: 682023025</p>
+                            <p class="text-sm text-gray-500 mt-1">IPK: 3.86 | Semester 6</p>
+                        </div>
+                    </div>
+                    <div class="w-8 h-8 bg-accent rounded-full border-4 border-white dark:border-gray-900 z-10 flex items-center justify-center">
+                        <div class="w-3 h-3 bg-white rounded-full"></div>
+                    </div>
+                    <div class="flex-1 md:pl-8 hidden md:block"></div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="relative flex flex-col md:flex-row items-center mb-12 reveal">
+                    <div class="flex-1 md:pr-8 hidden md:block"></div>
+                    <div class="w-8 h-8 bg-secondary rounded-full border-4 border-white dark:border-gray-900 z-10 flex items-center justify-center">
+                        <div class="w-3 h-3 bg-white rounded-full"></div>
+                    </div>
+                    <div class="flex-1 md:pl-8 mt-4 md:mt-0">
+                        <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700 inline-block">
+                            <span class="text-secondary font-bold text-sm">2025/2026</span>
+                            <h3 class="font-display text-xl font-bold mt-2">President ISACA Student Group UKSW</h3>
+                            <p class="text-sm text-gray-500 mt-1">Memimpin organisasi dan bertanggung jawab atas kegiatan dan program kerja</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Timeline Item 3 -->
+                <div class="relative flex flex-col md:flex-row items-center mb-12 reveal">
+                    <div class="flex-1 md:text-right md:pr-8 mb-4 md:mb-0">
+                        <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700 inline-block">
+                            <span class="text-accent font-bold text-sm">2025</span>
+                            <h3 class="font-display text-xl font-bold mt-2">Asisten Dosen</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mt-2">Pemrograman Dasar (Python)</p>
+                            <p class="text-sm text-gray-500 mt-1">Membantu mengajar dasar-dasar Python kepada mahasiswa baru</p>
+                        </div>
+                    </div>
+                    <div class="w-8 h-8 bg-accent rounded-full border-4 border-white dark:border-gray-900 z-10 flex items-center justify-center">
+                        <div class="w-3 h-3 bg-white rounded-full"></div>
+                    </div>
+                    <div class="flex-1 md:pl-8 hidden md:block"></div>
+                </div>
+                <!-- Timeline Item 4 -->
+                <div class="relative flex flex-col md:flex-row items-center mb-12 reveal">
+                    <div class="flex-1 md:pr-8 hidden md:block"></div>
+                    <div class="w-8 h-8 bg-secondary rounded-full border-4 border-white dark:border-gray-900 z-10 flex items-center justify-center">
+                        <div class="w-3 h-3 bg-white rounded-full"></div>
+                    </div>
+                    <div class="flex-1 md:pl-8 mt-4 md:mt-0">
+                        <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700 inline-block">
+                            <span class="text-secondary font-bold text-sm">2025</span>
+                            <h3 class="font-display text-xl font-bold mt-2">Asisten Dosen PBO</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mt-2">Pemrograman Berorientasi Objek</p>
+                            <p class="text-sm text-gray-500 mt-1">Mengajar konsep OOP menggunakan Java</p>
+                        </div>
+                    </div>
+                </div>
+                                <!-- Timeline Item 3 -->
+                <div class="relative flex flex-col md:flex-row items-center mb-12 reveal">
+                    <div class="flex-1 md:text-right md:pr-8 mb-4 md:mb-0">
+                        <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700 inline-block">
+                            <span class="text-accent font-bold text-sm">2024</span>
+                            <h3 class="font-display text-xl font-bold mt-2">Asisten Dosen</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mt-2">Pemrograman Dasar (Python)</p>
+                            <p class="text-sm text-gray-500 mt-1">Membantu mengajar dasar-dasar Python kepada mahasiswa baru</p>
+                        </div>
+                    </div>
+                    <div class="w-8 h-8 bg-accent rounded-full border-4 border-white dark:border-gray-900 z-10 flex items-center justify-center">
+                        <div class="w-3 h-3 bg-white rounded-full"></div>
+                    </div>
+                    <div class="flex-1 md:pl-8 hidden md:block"></div>
+                </div>
+
+                 <!-- Timeline Item 4 -->
+                <div class="relative flex flex-col md:flex-row items-center mb-12 reveal">
+                    <div class="flex-1 md:pr-8 hidden md:block"></div>
+                    <div class="w-8 h-8 bg-secondary rounded-full border-4 border-white dark:border-gray-900 z-10 flex items-center justify-center">
+                        <div class="w-3 h-3 bg-white rounded-full"></div>
+                    </div>
+                    <div class="flex-1 md:pl-8 mt-4 md:mt-0">
+                        <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700 inline-block">
+                            <span class="text-secondary font-bold text-sm">2024</span>
+                            <h3 class="font-display text-xl font-bold mt-2"> Fasilitator OMB 2024</h3>
+                            <p class="text-sm text-gray-500 mt-1">Membimbing serta memberikan informasi penting kepada Mahasiswa Baru</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 5 -->
+                <div class="relative flex flex-col md:flex-row items-center reveal">
+                    <div class="flex-1 md:text-right md:pr-8 mb-4 md:mb-0">
+                        <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700 inline-block">
+                            <span class="text-accent font-bold text-sm">2024</span>
+                            <h3 class="font-display text-xl font-bold mt-2">LO ISFEST 2024</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mt-2">Liaison Officer</p>
+                            <p class="text-sm text-gray-500 mt-1">Menjadi pendamping peserta lomba</p>
+                        </div>
+                    </div>
+                    <div class="w-8 h-8 bg-gradient-to-r from-accent to-secondary rounded-full border-4 border-white dark:border-gray-900 z-10 flex items-center justify-center animate-pulse">
+                        <div class="w-3 h-3 bg-white rounded-full"></div>
+                    </div>
+                    <div class="flex-1 md:pl-8 hidden md:block"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
