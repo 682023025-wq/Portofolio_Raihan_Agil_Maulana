@@ -69,193 +69,124 @@
         </div>
     </nav>
 
-    <!-- Projects Section -->
-    <section class="py-32">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16 reveal">
-                <h2 class="font-display text-4xl font-bold mb-4">Proyek <span class="gradient-text">Saya</span></h2>
-                <p class="text-gray-600 dark:text-gray-400 mb-8">Hasil pembelajaran dan pengembangan skill</p>
-                
-                <div class="flex flex-wrap justify-center gap-2">
-                    <button onclick="filterProjects('all')" class="filter-btn active px-6 py-2 rounded-full border border-accent bg-accent text-white transition-all" data-filter="all">Semua</button>
-                    <button onclick="filterProjects('python')" class="filter-btn px-6 py-2 rounded-full border border-gray-300 dark:border-gray-600 hover:border-accent transition-all" data-filter="python">Python</button>
-                    <button onclick="filterProjects('java')" class="filter-btn px-6 py-2 rounded-full border border-gray-300 dark:border-gray-600 hover:border-accent transition-all" data-filter="java">Java</button>
-                    <button onclick="filterProjects('web')" class="filter-btn px-6 py-2 rounded-full border border-gray-300 dark:border-gray-600 hover:border-accent transition-all" data-filter="web">Web</button>
-                </div>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
-                <!-- Project Card 1 -->
-                <div class="project-card group relative bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 reveal" data-category="python">
-                    <div class="relative overflow-hidden aspect-video bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
-                        <span class="text-6xl">🐍</span>
-                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                            <div class="flex space-x-3">
-                                <a href="#" class="p-2 bg-white rounded-full text-primary hover:bg-accent hover:text-white transition-colors">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-xs font-medium text-blue-500 bg-blue-500/10 px-3 py-1 rounded-full">Python</span>
-                            <span class="text-xs text-gray-500">2024</span>
-                        </div>
-                        <h3 class="font-display text-xl font-bold mb-2 group-hover:text-blue-500 transition-colors">Data Analysis Project</h3>
-                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">Analisis data menggunakan Python dengan library Pandas dan Matplotlib untuk visualisasi data.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Pandas</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Matplotlib</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">NumPy</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 2 -->
-                <div class="project-card group relative bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 reveal" data-category="java">
-                    <div class="relative overflow-hidden aspect-video bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center">
-                        <span class="text-6xl">☕</span>
-                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                            <div class="flex space-x-3">
-                                <a href="#" class="p-2 bg-white rounded-full text-primary hover:bg-accent hover:text-white transition-colors">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-xs font-medium text-orange-500 bg-orange-500/10 px-3 py-1 rounded-full">Java</span>
-                            <span class="text-xs text-gray-500">2025</span>
-                        </div>
-                        <h3 class="font-display text-xl font-bold mb-2 group-hover:text-orange-500 transition-colors">Sistem Manajemen Perpustakaan</h3>
-                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">Aplikasi desktop untuk manajemen perpustakaan menggunakan Java Swing dan MySQL.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Java</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Swing</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 3 -->
-                <div class="project-card group relative bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 reveal" data-category="web">
-                    <div class="relative overflow-hidden aspect-video bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center">
-                        <span class="text-6xl">🌐</span>
-                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                            <div class="flex space-x-3">
-                                <a href="#" class="p-2 bg-white rounded-full text-primary hover:bg-accent hover:text-white transition-colors">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-xs font-medium text-purple-500 bg-purple-500/10 px-3 py-1 rounded-full">Web</span>
-                            <span class="text-xs text-gray-500">2025</span>
-                        </div>
-                        <h3 class="font-display text-xl font-bold mb-2 group-hover:text-purple-500 transition-colors">Portfolio Website</h3>
-                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">Website portfolio pribadi yang responsif menggunakan HTML, Tailwind CSS, dan JavaScript.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">HTML</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Tailwind</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 4 -->
-                <div class="project-card group relative bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 reveal" data-category="python">
-                    <div class="relative overflow-hidden aspect-video bg-gradient-to-br from-green-400 to-teal-500 flex items-center justify-center">
-                        <span class="text-6xl">🤖</span>
-                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                            <div class="flex space-x-3">
-                                <a href="#" class="p-2 bg-white rounded-full text-primary hover:bg-accent hover:text-white transition-colors">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-xs font-medium text-green-500 bg-green-500/10 px-3 py-1 rounded-full">Python</span>
-                            <span class="text-xs text-gray-500">2024</span>
-                        </div>
-                        <h3 class="font-display text-xl font-bold mb-2 group-hover:text-green-500 transition-colors">Automation Script</h3>
-                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">Script Python untuk otomatisasi tugas-tugas repetitive seperti file management dan data processing.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Python</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">OS</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Pathlib</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 5 -->
-                <div class="project-card group relative bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 reveal" data-category="java">
-                    <div class="relative overflow-hidden aspect-video bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center">
-                        <span class="text-6xl">🎮</span>
-                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                            <div class="flex space-x-3">
-                                <a href="#" class="p-2 bg-white rounded-full text-primary hover:bg-accent hover:text-white transition-colors">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-xs font-medium text-indigo-500 bg-indigo-500/10 px-3 py-1 rounded-full">Java</span>
-                            <span class="text-xs text-gray-500">2025</span>
-                        </div>
-                        <h3 class="font-display text-xl font-bold mb-2 group-hover:text-indigo-500 transition-colors">Console Game</h3>
-                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">Game sederhana berbasis console menggunakan Java dengan implementasi konsep OOP.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Java</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">OOP</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Scanner</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 6 -->
-                <div class="project-card group relative bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 reveal" data-category="web">
-                    <div class="relative overflow-hidden aspect-video bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center">
-                        <span class="text-6xl">📊</span>
-                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                            <div class="flex space-x-3">
-                                <a href="#" class="p-2 bg-white rounded-full text-primary hover:bg-accent hover:text-white transition-colors">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-xs font-medium text-yellow-500 bg-yellow-500/10 px-3 py-1 rounded-full">Web</span>
-                            <span class="text-xs text-gray-500">2025</span>
-                        </div>
-                        <h3 class="font-display text-xl font-bold mb-2 group-hover:text-yellow-500 transition-colors">Dashboard Admin</h3>
-                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">Dashboard admin sederhana dengan fitur CRUD menggunakan HTML, CSS, dan JavaScript.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">HTML</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">CSS</span>
-                            <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-12">
-                <a href="https://github.com/raihanagil" target="_blank" class="inline-flex items-center space-x-2 text-accent hover:text-secondary transition-colors font-medium">
-                    <span>Lihat lebih banyak di GitHub</span>
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                </a>
+<!-- Projects Section -->
+<section class="py-32">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16 reveal">
+            <h2 class="font-display text-4xl font-bold mb-4">Proyek <span class="gradient-text">Saya</span></h2>
+            <p class="text-gray-600 dark:text-gray-400 mb-8">Hasil pembelajaran dan pengembangan skill</p>
+            
+            <div class="flex flex-wrap justify-center gap-2">
+                <button onclick="filterProjects('all')" class="filter-btn active px-6 py-2 rounded-full border border-accent bg-accent text-white transition-all" data-filter="all">Semua</button>
+                <button onclick="filterProjects('python')" class="filter-btn px-6 py-2 rounded-full border border-gray-300 dark:border-gray-600 hover:border-accent transition-all" data-filter="python">Python</button>
+                <button onclick="filterProjects('web')" class="filter-btn px-6 py-2 rounded-full border border-gray-300 dark:border-gray-600 hover:border-accent transition-all" data-filter="web">Web</button>
             </div>
         </div>
-    </section>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+            
+            <!-- Project Card 1: Cafe Admin Panel -->
+            <div class="project-card group relative bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 reveal" data-category="python">
+                <div class="relative overflow-hidden aspect-video bg-gradient-to-br from-blue-500 to-green-500 flex items-center justify-center">
+                    <img src="assets/admin.png" alt="Cafe Admin Panel" class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div class="flex space-x-3">
+                            <a href="https://contohwebsitecafe-production.up.railway.app/admin" target="_blank" class="p-2 bg-white rounded-full text-primary hover:bg-accent hover:text-white transition-colors" title="Live Demo">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            </a>
+                            <a href="https://github.com/682023025-wq/contohwebsitecafe" class="p-2 bg-white rounded-full text-primary hover:bg-accent hover:text-white transition-colors" title="Source Code">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-xs font-medium text-blue-500 bg-blue-500/10 px-3 py-1 rounded-full">Python</span>
+                        <span class="text-xs text-gray-500">2026</span>
+                    </div>
+                    <h3 class="font-display text-xl font-bold mb-2 group-hover:text-blue-500 transition-colors">Cafe Admin Panel</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">Dashboard admin untuk mengelola konten website cafe dengan backend Python. Dilengkapi sistem autentikasi dan CRUD operations dengan database MongoDB.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Python</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">MongoDB</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Flask</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Authentication</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2: Cafe Website Utama -->
+            <div class="project-card group relative bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 reveal" data-category="python">
+                <div class="relative overflow-hidden aspect-video bg-gradient-to-br from-amber-400 to-green-500 flex items-center justify-center">
+                        <img src="assets/cafe_utama.png" alt="Project Thumbnail" class="w-full h-full object-cover">                    <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div class="flex space-x-3">
+                            <a href="https://contohwebsitecafe-production.up.railway.app/" target="_blank" class="p-2 bg-white rounded-full text-primary hover:bg-accent hover:text-white transition-colors" title="Live Demo">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            </a>
+                            <a href="https://github.com/682023025-wq/contohwebsitecafe" class="p-2 bg-white rounded-full text-primary hover:bg-accent hover:text-white transition-colors" title="Source Code">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-xs font-medium text-amber-500 bg-amber-500/10 px-3 py-1 rounded-full">Python</span>
+                        <span class="text-xs text-gray-500">2026</span>
+                    </div>
+                    <h3 class="font-display text-xl font-bold mb-2 group-hover:text-amber-500 transition-colors">Cafe Website</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">Website cafe modern dengan backend Python yang mengambil data dari MongoDB. Menampilkan menu, profil cafe, dan informasi kontak dengan desain responsif.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Python</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">HTML/CSS</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">MongoDB</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Flask</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3: Portfolio Website -->
+            <div class="project-card group relative bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 reveal" data-category="web">
+                <div class="relative overflow-hidden aspect-video bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                    <img src="assets/portofolio.png" alt="Project Thumbnail" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div class="flex space-x-3">
+                            <a href="https://682023025-wq.github.io/Portofolio_Raihan_Agil_Maulana/" target="_blank" class="p-2 bg-white rounded-full text-primary hover:bg-accent hover:text-white transition-colors" title="Live Demo">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            </a>
+                            <a href="https://github.com/682023025-wq/Portofolio_Raihan_Agil_Maulana" target="_blank" class="p-2 bg-white rounded-full text-primary hover:bg-accent hover:text-white transition-colors" title="Source Code">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-xs font-medium text-purple-500 bg-purple-500/10 px-3 py-1 rounded-full">Web</span>
+                        <span class="text-xs text-gray-500">2026</span>
+                    </div>
+                    <h3 class="font-display text-xl font-bold mb-2 group-hover:text-purple-500 transition-colors">Portfolio Pribadi</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">Website portfolio interaktif dengan dark mode, animasi smooth, dan desain modern untuk menampilkan profil, skill, dan proyek.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">HTML</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Tailwind CSS</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">JavaScript</span>
+                        <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">GitHub Pages</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-12">
+            <a href="https://github.com/682023025-wq" target="_blank" class="inline-flex items-center space-x-2 text-accent hover:text-secondary transition-colors font-medium">
+                <span>Lihat lebih banyak di GitHub</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            </a>
+        </div>
+    </div>
+</section>
 
     <script src="js/main.js"></script>
 </body>
